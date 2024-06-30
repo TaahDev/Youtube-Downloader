@@ -1,0 +1,32 @@
+<!-- templates/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Downloader</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>YouTube Downloader</h1>
+        <form id="download-form">
+            <label for="youtube-url">YouTube URL:</label>
+            <input type="text" id="youtube-url" name="url" required>
+            <label for="format">Format:</label>
+            <select id="format" name="format" required>
+                <option value="mp4">MP4</option>
+                <option value="mp3">MP3</option>
+            </select>
+            <button type="submit">Download</button>
+        </form>
+        <div id="result">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
