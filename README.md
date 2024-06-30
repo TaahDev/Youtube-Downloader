@@ -19,8 +19,8 @@ A simple YouTube downloader built with Python (Flask) and JavaScript.
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/taahdev/youtube-downloader.git
-    cd youtube-downloader
+    git clone https://github.com/taahdev/Youtube-Downloader.git
+    cd Youtube-Downloader
     ```
 
 2. Install Python dependencies:
